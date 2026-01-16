@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم حلاوة - فعالية شتوية عائلية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light" data-color-mode="warm">
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand" id="navBrand">مطعم حلاوة</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" id="navHome">الرئيسية</a></li>
+                <li><a href="#benefits" id="navBenefits">المميزات</a></li>
+                <li><a href="#testimonials" id="navTestimonials">آراء العملاء</a></li>
+                <li><a href="#booking" id="navBooking">الحجز</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+                <button class="color-toggle" id="colorToggle" aria-label="Toggle color mode">🎨</button>
+                <button class="lang-toggle" id="langToggle">English</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 id="heroTitle">مطعم حلاوة</h1>
+            <p class="hero-subtitle" id="heroSubtitle">مطعم ومقهى - مأكولات عربية وحلويات متنوعة</p>
+            <p class="hero-description" id="heroDescription">فعالية شتوية عائلية مميزة كل خميس وجمعة وسبت</p>
+            <a href="#booking" class="btn btn-primary" id="heroCta">احجز الآن</a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2 id="benefitsTitle">لماذا تختار فعاليتنا؟</h2>
+            <div class="benefits-grid" id="benefitsGrid">
+                <!-- Benefits will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 id="ctaTitle">ابدأ تجربتك المميزة</h2>
+            <p id="ctaDescription">احجز مقعدك الآن واستمتع بأجواء شتوية دافئة</p>
+            <a href="#booking" class="btn btn-secondary" id="ctaButton">احجز الآن</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 id="testimonialsTitle">آراء عملائنا</h2>
+            <div class="testimonials-grid" id="testimonialsGrid">
+                <!-- Testimonials will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 id="formTitle">نموذج الحجز</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="fullName" id="labelFullName">الاسم الكامل</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <span class="error-message" id="errorFullName"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="numPeople" id="labelNumPeople">عدد الأشخاص</label>
+                    <input type="number" id="numPeople" name="numPeople" min="1" max="10" required>
+                    <span class="error-message" id="errorNumPeople"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="mealType" id="labelMealType">نوع الوجبة</label>
+                    <select id="mealType" name="mealType" required>
+                        <option value="lunch" id="optionLunch">غداء - 3 مساءً</option>
+                        <option value="dinner" id="optionDinner">عشاء - 8 مساءً</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingDate" id="labelDate">تاريخ الحجز</label>
+                    <input type="date" id="bookingDate" name="bookingDate" required>
+                    <span class="error-message" id="errorDate"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="submitButton">تأكيد الحجز</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 id="footerBrandName">مطعم حلاوة</h3>
+                    <p id="footerLocation">خلدا - عمان، الأردن</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 id="footerSupport">الدعم</h4>
+                    <a href="#" class="support-link" target="_blank" id="supportLink">
+                        <span id="footerSupportNumber">واتساب: +962 XX XXX XXXX</span>
+                    </a>
+                </div>
+
+                <div class="footer-section">
+                    <h4 id="footerPoliciesTitle">السياسات</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" id="policyPayment">سياسة الدفع</a></li>
+                        <li><a href="#" id="policyCancellation">سياسة الإلغاء</a></li>
+                        <li><a href="#" id="policyRefund">سياسة الاسترجاع</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 id="footerShare">شارك على وسائل التواصل</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" id="facebookLink">📘</a>
+                        <a href="#" aria-label="Instagram" id="instagramLink">📷</a>
+                        <a href="#" aria-label="Twitter" id="twitterLink">🐦</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p id="copyright">© 2026 مطعم حلاوة. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Thank You Page (Hidden by default) -->
+    <div id="thankYouPage" class="thank-you-page hidden">
+        <div class="thank-you-content">
+            <h1 id="thankYouTitle">شكراً لحجزك!</h1>
+            <p id="thankYouMessage">تم استلام طلب الحجز بنجاح. سنتواصل معك قريباً</p>
+            <button class="btn btn-primary" id="backHomeButton">العودة للرئيسية</button>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
