@@ -4,7 +4,6 @@
 // ================================================
 
 const siteConfig = {
-    
     // ========== معلومات المطعم الأساسية ==========
     restaurant: {
         name: {
@@ -19,8 +18,7 @@ const siteConfig = {
             ar: "خلدا - عمان، الأردن",
             en: "Khalda - Amman, Jordan"
         },
-        // رقم الواتساب (يجب كتابته بالصيغة الدولية بدون + أو صفر)
-        whatsapp: "962799123456", // استبدل هذا بالرقم الحقيقي
+        whatsapp: "962799123456",
         supportNumber: {
             ar: "+962 79 912 3456",
             en: "+962 79 912 3456"
@@ -29,13 +27,9 @@ const siteConfig = {
 
     // ========== تفاصيل الفعالية ==========
     event: {
-        // تاريخ بداية الفعالية (صيغة: YYYY-MM-DD)
         startDate: "2026-01-20",
-        // تاريخ نهاية الفعالية (صيغة: YYYY-MM-DD)
         endDate: "2026-02-20",
-        // الأيام المتاحة: 0=الأحد, 1=الاثنين, 2=الثلاثاء, 3=الأربعاء, 4=الخميس, 5=الجمعة, 6=السبت
         availableDays: [4, 5, 6],
-        // أوقات الوجبات
         lunchTime: {
             ar: "3 مساءً",
             en: "3 PM"
@@ -44,20 +38,16 @@ const siteConfig = {
             ar: "8 مساءً",
             en: "8 PM"
         },
-        // مدة كل جلسة بالساعات
         duration: 3,
-        // عدد المقاعد المتاحة
         totalSeats: 200,
-        // سعر المقعد الواحد
         pricePerSeat: 20,
-        // العملة
         currency: {
             ar: "دينار",
             en: "JOD"
         }
     },
 
-    // ========== محتوى الصفحة الرئيسية (Hero) ==========
+    // ========== محتوى الصفحة الرئيسية ==========
     hero: {
         title: {
             ar: "مطعم حلاوة",
@@ -71,9 +61,65 @@ const siteConfig = {
             ar: "فعالية شتوية عائلية مميزة كل خميس وجمعة وسبت",
             en: "Special Winter Family Event Every Thursday, Friday & Saturday"
         },
+        heroTitle: {
+            ar: "فعالية الشتاء العائلية",
+            en: "Winter Family Event"
+        },
+        heroSub: {
+            ar: "استمتع بأشهى بوفيهات الغداء والعشاء في قلب عمان - خلدا",
+            en: "Enjoy the finest lunch and dinner buffets in Amman - Khalda"
+        },
+        price: {
+            ar: "20 دينار للمقعد",
+            en: "20 JOD per seat"
+        },
         buttonText: {
             ar: "احجز الآن",
             en: "Book Now"
+        },
+        badge: {
+            ar: "فعالية شتوية مميزة",
+            en: "Special Winter Event"
+        },
+        features: {
+            family: {
+                ar: "أجواء عائلية",
+                en: "Family Atmosphere"
+            },
+            buffet: {
+                ar: "بوفيه مفتوح",
+                en: "Open Buffet"
+            },
+            days: {
+                ar: "خميس - جمعة - سبت",
+                en: "Thu - Fri - Sat"
+            }
+        },
+        stats: {
+            seats: {
+                ar: "مقعد متاح",
+                en: "Seats Available"
+            },
+            price: {
+                ar: "دينار للفرد",
+                en: "JOD per Person"
+            },
+            hours: {
+                ar: "ساعات متصلة",
+                en: "Consecutive Hours"
+            }
+        },
+        offer: {
+            ar: "عرض خاص لفترة محدودة",
+            en: "Special Limited Time Offer"
+        },
+        proof: {
+            ar: "أكثر من 1000 عميل راضي",
+            en: "Over 1000 Satisfied Customers"
+        },
+        scroll: {
+            ar: "استكشف المزيد",
+            en: "Explore More"
         }
     },
 
@@ -127,7 +173,7 @@ const siteConfig = {
         ]
     },
 
-    // ========== قسم الدعوة للحجز (CTA) ==========
+    // ========== قسم الدعوة للحجز ==========
     cta: {
         title: {
             ar: "ابدأ تجربتك المميزة",
@@ -224,13 +270,11 @@ const siteConfig = {
             ar: "تأكيد الحجز",
             en: "Confirm Booking"
         },
-        // إعدادات التحقق من صحة البيانات
         validation: {
             minNameLength: 2,
             minPeople: 1,
-            maxPeople: 10
+            maxPeople: 200
         },
-        // رسائل الخطأ
         errors: {
             nameRequired: {
                 ar: "الاسم الكامل مطلوب",
@@ -245,8 +289,8 @@ const siteConfig = {
                 en: "Number of people is required"
             },
             peopleInvalid: {
-                ar: "العدد يجب أن يكون بين 1 و 10",
-                en: "Number must be between 1 and 10"
+                ar: "العدد يجب أن يكون بين 1 و 200",
+                en: "Number must be between 1 and 200"
             },
             dateRequired: {
                 ar: "تاريخ الحجز مطلوب",
@@ -299,7 +343,7 @@ const siteConfig = {
         }
     },
 
-    // ========== التذييل (Footer) ==========
+    // ========== التذييل ==========
     footer: {
         copyright: {
             ar: "© 2026 مطعم حلاوة. جميع الحقوق محفوظة",
@@ -331,7 +375,6 @@ const siteConfig = {
             ar: "شارك على وسائل التواصل",
             en: "Share on Social Media"
         },
-        // روابط مواقع التواصل الاجتماعي
         socialLinks: {
             facebook: "https://facebook.com/halaweh-restaurant",
             instagram: "https://instagram.com/halaweh-restaurant",
@@ -341,24 +384,9 @@ const siteConfig = {
 
     // ========== إعدادات الموقع العامة ==========
     settings: {
-        // اللغة الافتراضية: 'ar' للعربي أو 'en' للإنجليزي
-        defaultLanguage: "ar",
-        // المظهر الافتراضي: 'light' أو 'dark'
+        defaultLanguage: 'ar',
         defaultTheme: "light",
-        // نمط الألوان الافتراضي: 'warm' أو 'cool' أو 'nature'
         defaultColorMode: "warm",
-        // تفعيل التمرير السلس
         smoothScroll: true
     }
 };
-
-// ================================================
-// ملاحظات هامة للتعديل:
-// ================================================
-// 1. عند تغيير التواريخ، استخدم صيغة: YYYY-MM-DD
-// 2. عند تغيير رقم الواتساب، احذف الصفر الأول واكتب الرقم بالصيغة الدولية
-// 3. يمكنك إضافة المزيد من المميزات في benefits.items
-// 4. يمكنك إضافة أو حذف آراء العملاء من testimonials.items
-// 5. التقييم (rating) يكون من 1 إلى 5
-// 6. availableDays: الأحد=0, الاثنين=1, الثلاثاء=2, الأربعاء=3, الخميس=4, الجمعة=5, السبت=6
-// ================================================

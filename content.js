@@ -1,6 +1,5 @@
 // ================================================
 // ملف المحتوى - يستخدم البيانات من config.js
-// لا تحتاج لتعديل هذا الملف - قم بتعديل ملف config.js فقط
 // ================================================
 
 const content = {
@@ -15,7 +14,24 @@ const content = {
             title: siteConfig.hero.title.ar,
             subtitle: siteConfig.hero.subtitle.ar,
             description: siteConfig.hero.description.ar,
-            cta: siteConfig.hero.buttonText.ar
+            cta: siteConfig.hero.buttonText.ar,
+            badge: siteConfig.hero.badge.ar,
+            heroTitle: siteConfig.hero.heroTitle.ar,
+            heroSub: siteConfig.hero.heroSub.ar,
+            price: siteConfig.hero.price.ar,
+            features: {
+                family: siteConfig.hero.features.family.ar,
+                buffet: siteConfig.hero.features.buffet.ar,
+                days: siteConfig.hero.features.days.ar
+            },
+            stats: {
+                seats: siteConfig.hero.stats.seats.ar,
+                price: siteConfig.hero.stats.price.ar,
+                hours: siteConfig.hero.stats.hours.ar
+            },
+            offer: siteConfig.hero.offer.ar,
+            proof: siteConfig.hero.proof.ar,
+            scroll: siteConfig.hero.scroll.ar
         },
         benefits: {
             title: siteConfig.benefits.title.ar,
@@ -85,7 +101,24 @@ const content = {
             title: siteConfig.hero.title.en,
             subtitle: siteConfig.hero.subtitle.en,
             description: siteConfig.hero.description.en,
-            cta: siteConfig.hero.buttonText.en
+            cta: siteConfig.hero.buttonText.en,
+            badge: siteConfig.hero.badge.en,
+            heroTitle: siteConfig.hero.heroTitle.en,
+            heroSub: siteConfig.hero.heroSub.en,
+            price: siteConfig.hero.price.en,
+            features: {
+                family: siteConfig.hero.features.family.en,
+                buffet: siteConfig.hero.features.buffet.en,
+                days: siteConfig.hero.features.days.en
+            },
+            stats: {
+                seats: siteConfig.hero.stats.seats.en,
+                price: siteConfig.hero.stats.price.en,
+                hours: siteConfig.hero.stats.hours.en
+            },
+            offer: siteConfig.hero.offer.en,
+            proof: siteConfig.hero.proof.en,
+            scroll: siteConfig.hero.scroll.en
         },
         benefits: {
             title: siteConfig.benefits.title.en,
@@ -145,3 +178,8 @@ const content = {
         }
     }
 };
+
+// تصدير المحتوى للاستخدام في script.js
+if (typeof window !== 'undefined') {
+    window.content = content;
+}

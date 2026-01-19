@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم حلاوة - فعالية شتوية عائلية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light" data-color-mode="warm">
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand" id="navBrand">
+                <div class="brand-logo">
+                    <span class="logo-icon">🏪</span>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-main">مطعم حلاوة</span>
+                    <span class="brand-subtitle">Halawa Restaurant</span>
+                </div>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" id="navHome" class="nav-link">
+                    <span class="link-icon">🏠</span>
+                    <span class="link-text">الرئيسية</span>
+                </a></li>
+                <li><a href="#benefits" id="navBenefits" class="nav-link">
+                    <span class="link-icon">⭐</span>
+                    <span class="link-text">المميزات</span>
+                </a></li>
+                <li><a href="#testimonials" id="navTestimonials" class="nav-link">
+                    <span class="link-icon">💬</span>
+                    <span class="link-text">آراء العملاء</span>
+                </a></li>
+                <li><a href="#booking" id="navBooking" class="nav-link">
+                    <span class="link-icon">📅</span>
+                    <span class="link-text">الحجز</span>
+                </a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <div class="control-group">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="تبديل الوضع">
+                        <span class="control-icon">🌙</span>
+                        <span class="control-text">المظهر</span>
+                    </button>
+                    <button class="color-toggle" id="colorToggle" aria-label="Toggle color mode" title="تغيير الألوان">
+                        <span class="control-icon">🎨</span>
+                        <span class="control-text">الألوان</span>
+                    </button>
+                    <button class="lang-toggle" id="langToggle" title="English">
+                        <span class="control-icon">🇺🇸</span>
+                        <span class="control-text">EN</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="navbar-progress">
+            <div class="progress-bar"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Background Elements -->
+        <div class="hero-bg-elements">
+            <div class="floating-element floating-1">🍽️</div>
+            <div class="floating-element floating-2">☕</div>
+            <div class="floating-element floating-3">🥘</div>
+            <div class="floating-element floating-4">🍰</div>
+            <div class="floating-element floating-5">🌟</div>
+            <div class="floating-element floating-6">✨</div>
+            <div class="floating-element floating-7">🌙</div>
+            <div class="floating-element floating-8">🍴</div>
+        </div>
+
+        <!-- Particles Effect -->
+        <div class="hero-particles">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+            <div class="particle particle-6"></div>
+            <div class="particle particle-7"></div>
+            <div class="particle particle-8"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">⭐</span>
+                <span class="badge-text" id="heroBadge">فعالية شتوية مميزة</span>
+            </div>
+
+            <h1 id="heroTitle" class="hero-title">
+                مطعم حلاوة
+                <span class="title-accent">Halawa</span>
+            </h1>
+
+            <p class="hero-subtitle" id="heroSubtitle">
+                <span class="subtitle-icon">🏪</span>
+                مطعم ومقهى - مأكولات عربية وحلويات متنوعة
+            </p>
+
+            <div class="hero-features">
+                <div class="feature-item">
+                    <span class="feature-icon">👨‍👩‍👧‍👦</span>
+                    <span id="heroFeature1">أجواء عائلية</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🍽️</span>
+                    <span id="heroFeature2">بوفيه مفتوح</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">⏰</span>
+                    <span id="heroFeature3">خميس - جمعة - سبت</span>
+                </div>
+            </div>
+
+            <p class="hero-description" id="heroDescription">
+                استمتع بتجربة طعام فريدة في أجواء دافئة مع العائلة والأصدقاء
+            </p>
+
+            <div class="hero-actions">
+                <a href="#booking" class="btn btn-primary btn-large" id="heroCta">
+                    <span class="btn-icon">🎯</span>
+                    <span id="heroCtaText">احجز الآن</span>
+                    <div class="btn-glow"></div>
+                </a>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">👥</div>
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label" id="statLabel1">مقعد متاح</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">💰</div>
+                        <span class="stat-number">20</span>
+                        <span class="stat-label" id="statLabel2">دينار للفرد</span>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">⏱️</div>
+                        <span class="stat-number">3</span>
+                        <span class="stat-label" id="statLabel3">ساعات متصلة</span>
+                    </div>
+                </div>
+
+                <!-- Special Offer Badge -->
+                <div class="special-offer">
+                    <div class="offer-badge">
+                        <span class="offer-icon">🔥</span>
+                        <span class="offer-text" id="offerText">عرض خاص لفترة محدودة</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="hero-social-proof">
+                <div class="proof-item">
+                    <div class="stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <span class="proof-text" id="proofText">أكثر من 1000 عميل راضي</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="hero-scroll">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text" id="scrollText">استكشف المزيد</span>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2 id="benefitsTitle">لماذا تختار فعاليتنا؟</h2>
+            <div class="benefits-grid" id="benefitsGrid">
+                <!-- Benefits will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 id="ctaTitle">ابدأ تجربتك المميزة</h2>
+            <p id="ctaDescription">احجز مقعدك الآن واستمتع بأجواء شتوية دافئة</p>
+            <a href="#booking" class="btn btn-secondary" id="ctaButton">احجز الآن</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 id="testimonialsTitle">آراء عملائنا</h2>
+            <div class="testimonials-grid" id="testimonialsGrid">
+                <!-- Testimonials will be inserted by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 id="formTitle">نموذج الحجز</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="fullName" id="labelFullName">الاسم الكامل</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <span class="error-message" id="errorFullName"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="numPeople" id="labelNumPeople">عدد الأشخاص</label>
+                    <input type="number" id="numPeople" name="numPeople" min="1" max="200" required>
+                    <span class="error-message" id="errorNumPeople"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="mealType" id="labelMealType">نوع الوجبة</label>
+                    <select id="mealType" name="mealType" required>
+                        <option value="lunch" id="optionLunch">غداء - 3 مساءً</option>
+                        <option value="dinner" id="optionDinner">عشاء - 8 مساءً</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingDate" id="labelDate">تاريخ الحجز</label>
+                    <input type="date" id="bookingDate" name="bookingDate" required>
+                    <span class="error-message" id="errorDate"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="submitButton">تأكيد الحجز</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 id="footerBrandName">مطعم حلاوة</h3>
+                    <p id="footerLocation">خلدا - عمان، الأردن</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 id="footerSupport">تواصل معنا</h4>
+                    <div class="contact-methods">
+                        <a href="#" class="contact-method phone-method" target="_blank">
+                            <div class="contact-icon-wrapper">
+                                <svg class="contact-svg phone-svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">الهاتف</span>
+                                <span class="contact-number">+962 6 123 4567</span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="contact-method location-method" target="_blank">
+                            <div class="contact-icon-wrapper">
+                                <svg class="contact-svg location-svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">الموقع</span>
+                                <span class="contact-address">خلدا - عمان، الأردن</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 id="footerPoliciesTitle">السياسات</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" id="policyPayment">سياسة الدفع</a></li>
+                        <li><a href="#" id="policyCancellation">سياسة الإلغاء</a></li>
+                        <li><a href="#" id="policyRefund">سياسة الاسترجاع</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 id="footerShare">تابعنا على وسائل التواصل</h4>
+                    <div class="social-links">
+                        <button class="social-btn facebook-btn" data-platform="facebook" aria-label="Facebook">
+                            <span class="social-icon"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></span>
+                        </button>
+                        <button class="social-btn instagram-btn" data-platform="instagram" aria-label="Instagram">
+                            <span class="social-icon"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></span>
+                        </button>
+                        <button class="social-btn twitter-btn" data-platform="twitter" aria-label="Twitter/X">
+                            <span class="social-icon"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p id="copyright">© 2026 مطعم حلاوة. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Thank You Page (Hidden by default) -->
+    <div id="thankYouPage" class="thank-you-page hidden">
+        <div class="thank-you-content">
+            <h1 id="thankYouTitle">شكراً لحجزك!</h1>
+            <p id="thankYouMessage">تم استلام طلب الحجز بنجاح. سنتواصل معك قريباً</p>
+            <button class="btn btn-primary" id="backHomeButton">العودة للرئيسية</button>
+        </div>
+    </div>
+
+     <script src="config.js"></script>
+     <script src="content.js"></script>
+     <script src="script.js"></script>
+
+</body>
+</html>
